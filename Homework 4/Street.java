@@ -15,6 +15,15 @@ public class Street {
         this.lhIntersection = lhIntersection; //intersectia din stanga
         this.rhIntersection = rhIntersection; //intersectia din dreapta
     }
+    public int  getLenght() {
+        return length;
+    }
+    public String getName() {
+        return name;
+    }
+    public int getNumberOfIntersectingStreets(){
+        return lhIntersection.getNumberOfIntersections()-1+rhIntersection.getNumberOfIntersections()-1;
+    }
 
     public Intersection getLhIntersection() {
         return lhIntersection;
